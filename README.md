@@ -29,23 +29,23 @@ Este é um aplicativo de visualização de imagens desenvolvido em Python usando
 
 1. Instale as dependências necessárias:
 
-\`\`\`bash
+```bash
 pip install -r requirements.txt
-\`\`\`
+```
 
 2. Para usuários de macOS, pode ser necessário instalar o tkinter:
 
-\`\`\`bash
+```bash
 brew install python-tk@3.13
-\`\`\`
+```
 
 ## Como usar
 
 1. Execute o script:
 
-\`\`\`bash
+```bash
 python main.py
-\`\`\`
+```
 
 2. Na interface do aplicativo:
    - Clique em "Browse" para selecionar uma imagem (a imagem será carregada automaticamente)
@@ -81,23 +81,23 @@ python main.py
 
 ## Personalização
 
-Para adicionar novos filtros, basta adicionar novas entradas ao dicionário \`FILTERS\` com a implementação correspondente:
+Para adicionar novos filtros, basta adicionar novas entradas ao dicionário `FILTERS` com a implementação correspondente:
 
-\`\`\`python
+```python
 FILTERS = {
     # ... filtros existentes ...
     "Novo Filtro": lambda img: # implementação do filtro
 }
-\`\`\`
+```
 
-Da mesma forma, novas transformações podem ser adicionadas ao dicionário \`TRANSFORMATIONS\`:
+Da mesma forma, novas transformações podem ser adicionadas ao dicionário `TRANSFORMATIONS`:
 
-\`\`\`python
+```python
 TRANSFORMATIONS = {
     # ... transformações existentes ...
     "Nova Transformação": lambda img, val: # implementação da transformação
 }
-\`\`\`
+```
 
 ## Detalhes técnicos
 
